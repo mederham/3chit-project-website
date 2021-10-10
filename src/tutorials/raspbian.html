@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link id="layout" rel="stylesheet" href="/style/layout.css">
+        <link id="theme" rel="stylesheet" href="/style/dark.css"> <!-- Make changeable with JS -->
+
+        <script src="/js/themes.js" charset="utf-8"></script>
+        
+        <title>Raspbian on Raspberry PI</title>
+    </head>
+    <body>
+
+        
+
+        <div id="sidebar">
+          <h1 class="sidebar-headline">Tutorials</h1>
+        </div>
+
+        <div id="main">
+          <div id="navigation">
+            <a href="../index.html" class="menu-item" id="home"></a>
+            <div class="spacer"></div>
+            <a href="index.html" class="menu-item" id="tutorials"></a>
+            <a href="" class="menu-item" id="blogs"></a>
+            <a href="" class="menu-item" id="tools"></a>
+            <a href="" class="menu-item" id="videos"></a>
+            <div class="spacer"></div>
+            <a class="menu-item" id="change-theme" onclick="toggleTheme()"></a>
+          </div>
+
+          <div id="content">
+            <h2 class="article-headline">How to install Raspbian on a Raspberry PI</h2>
+
+            <list>
+                Requirements:
+                <ul>
+                    <li>Raspberry PI (<a class="text-link" href="https://geizhals.at/raspberry-pi-4-modell-b-v54547.html" target="_blank">Get it here</a>)</li>
+                    <li>SD card (minimum 8GB - <a class="text-link" href="" target="_blank">Get it here</a>)</li>
+                    <li>5V power adapter (<a class="text-link" href="https://geizhals.at/mophie-power-adapter-usb-a-5v-eu-v12781.html" target="_blank">Get it here</a>)</li>
+                    <li>USB type C Cable (<a class="text-link" href="https://geizhals.at/fresh-n-rebel-usb-a-to-usb-c-cable-0-2m-v72564.html" target="_blank">Get it here</a>)</li>
+                    <li>Raspberry Pi Imager (<a class="text-link" href="https://www.raspberrypi.org/software/" target="_blank">Download here</a>)</li>
+
+                </ul>
+            </list>
+            </br></br>
+            <p>At first you have to download the latest version of
+                <a href="https://www.raspberrypi.org/software/" class ="text-link" style="width: 9.7em; margin-top: .8em;" target="_blank">Raspberry PI Imager</a>.
+            </p>
+            <p>If you work in a terminal on a Linux machine, you can just type <code>sudo apt install rpi-imager</code>.</p>
+            <p>After you downloaded the imager, connect your SD card to your PC and start the imager.</p> </br>
+            <p>Now choose the OS you want to use. If not needed, we recommend using Raspbian Lite, which comes without a desktop environment.</br>Select the SD card you have plugged into your PC and start the process.</p>
+            </br>
+            <p>Otherwise you could download the image use a different tool to install the OS. (<a class="text-link" href="https://www.raspberrypi.org/software/operating-systems/" target="_blank">OS images</a>, <a class="text-link" href="" target="_blank">Etcher</a>, <a class="text-link" href="https://rufus.ie" target="_blank">Rufus</a>)</p>
+            <p></br>After the chosen OS is installed add this file to activate SSH (<a href="../../data/downloads/linux/raspbian/ssh" download="ssh" class ="text-link">Download here</a>).</p>
+            <p>Now insert the SD-Card in the Raspberry PI and power it on. We recommend using a network cable for better internet-connection.</p> </br>
+            <p>Now you have to find out the IPv4-Adress of your Raspberry PI so you can connect per SSH to it.</p>
+            <p>Now go to your PC and start a SSH-service. On Windows: PowerShell, on Linux/MacOS: Terminal.</br> Type: <code>ssh pi@"IP-ADRESS"</code> to start a SSH-session. And type as Passwort: <code>raspberry</code></code></p> </br>
+            <p>You can now enjoy Raspbian on your Raspberry PI</p>
+          </div>
+           
+
+        </div>
+    </body>
+</html>

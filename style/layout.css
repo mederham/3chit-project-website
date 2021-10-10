@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ############# Navigation Bar ############# */
+
+#navigation {
+  width: min-content;
+  height: 75px;
+  margin: auto;
+  /* margin-top: 2.5em; */
+  margin-bottom: 2.5em;
+  border-radius: 15px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  /*padding-top: 13px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 1.5em;
+}
+
+.menu-item {
+  float: left;
+  border-radius: 15px;
+  width: 60px;
+  height: 60px;
+  display: inline;
+  margin: 0 8px;
+  transition: 400ms;
+}
+
+.menu-item:hover {
+  width: 65px;
+  height: 65px;
+  /* margin-bottom: 6px;
+  transition: 200ms; */
+}
+
+.spacer {
+  width: 4px;
+  height: 60px;
+  border-radius: 3px;
+  margin: 0 14px;
+}
+
+
+/* ################# Side Bar ################# */
+
+#sidebar {
+  float: left;
+  width: 22%;
+  height: 100%;
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  padding: 3%;
+  overflow-y: scroll;
+  scrollbar-width: none;      /* Remove scrollbar (Firefox) */
+  -ms-overflow-style: none;   /* Remove scrollbar (the good old Internet Explorer) */
+}
+
+#sidebar::-webkit-scrollbar {
+  display: none;              /* Remove scrollbar (Chrome, Safari, Opera) */
+}
+
+.sidebar-headline {
+  margin-bottom: 0.8em;
+}
+
+.sidebar-subheader {
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.sidebar-item {
+  color: inherit;
+  text-decoration: none;
+  font-size: 13pt;
+  display: block;
+  padding: 0.8ex 1ex;
+  border-radius: 10px;
+  margin: 0.8ex 0;
+}
+
+/* ################# Main ################# */
+
+#main {
+  width: 78%;
+  min-height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: 22%;
+}
+
+/* ################# Contents ################# */
+
+#content {
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+  padding: 0 2.6em 2em 2.6em;
+}
+
+.article-headline {
+  font-size: 28pt;
+  margin-bottom: 0.5em;
+}
+
+.text-link {
+  text-decoration: none;
+  display: inline;
+}
+
+ul {
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
+
+ul li {
+  list-style-type: circle;
+  margin-left: 2em;
+}
+
+code {
+  display: inline;
+  font-family: Consolas, "courier new";
+  padding: 0 1ex;;
+  font-size: 105%;
+  border-radius: 1ex;
+  box-sizing: border-box;
+}
+
+code.block {
+  display: block;
+  padding: 2ex;
+  margin: 2em 0;
+}
+
